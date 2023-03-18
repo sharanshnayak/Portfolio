@@ -806,6 +806,7 @@ div.coding-site .img {
 div.coding-site {
   border: 6px solid rgb(60, 63, 61);
   background-color: rgb(60, 63, 61);
+  border-radius: 5%;
 }
 
 div.coding-site:hover {
