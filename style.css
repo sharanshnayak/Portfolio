@@ -68,7 +68,8 @@ html {
  .navbar li a {
   color: white;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 25px;
+  font-family: 700;
   font-family: "Ubuntu", sans-serif;
 }
 .offcanvas {
@@ -108,7 +109,7 @@ html {
 .Home .text-box {
   position: absolute;
   top:35%;
-  left:10%;
+  left:8%;
 color: white;
 }
 .head1{
@@ -119,8 +120,8 @@ color: white;
 }
 .head2{
   display: block;
-  font-size: 8vh;
-  font-weight: 500;
+  font-size:8vh;
+  font-weight: 700;
 
   animation: moveinright 1s ease-out;
 
@@ -133,7 +134,8 @@ color: white;
 }
 .head3 b{
   color: orange;
-  font-size: 8vh;
+  font-weight: 700;
+  font-size: 6vh;
 }
 /* Hire button */
 .hire{
@@ -141,19 +143,21 @@ color: white;
   background-color:orange;
   animation: moveinbottom .5s ease-out .55s;
   animation-fill-mode: backwards;
+  font-size: 25px;
 }
 .hire:link,.hire:visited{
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  padding: 15px 50px;
+  padding: 15px 20px;
   margin-top: 30px;
   letter-spacing: 2px;
   position: relative;
 }
 .hire:hover{
   transform: translateY(-3px);
-  background-color: orange;
+  background-color: aquamarine;
+  color: black;
   box-shadow: 0 10px 20px rgb(0,0,0,0.3);
 }
 .hire:active{
@@ -172,11 +176,12 @@ color: white;
   transition: all .4s;
 }
 .hire::after{
-  background-color:aquamarine;
+  background-color:orange;
 }
 .hire:hover::after{
   transform: scaleY(1.6) scaleX(1.4);
   opacity: 0;
+
 }
 
 
@@ -284,8 +289,8 @@ color: white;
 }
 /* CV button */
 .cv{
-  color: white;
-  background-color:orange;
+  color: black;
+  background-color:aquamarine;
   animation: moveinbottom .5s ease-out .55s;
   animation-fill-mode: backwards;
   font-size: 25px;
@@ -301,8 +306,8 @@ color: white;
 }
 .cv:hover{
   transform: translateY(-3px);
-  background-color: aquamarine;
-  color: black;
+  background-color: orange;
+  color: white;
   box-shadow: 0 10px 20px rgb(0,0,0,0.3);
 }
 .cv:active{
@@ -321,7 +326,7 @@ color: white;
   transition: all .4s;
 }
 .cv::after{
-  background-color:orange;
+  background-color:aquamarine;
 }
 .cv:hover::after{
   transform: scaleY(1.6) scaleX(1.4);
@@ -497,8 +502,8 @@ text-align: center;
   margin-left: 168px;
 }
 
-.education-left img {
-  width: 90%;
+.education-left  {
+  width: 50%;
 }
 
 /* Resonsive code */
@@ -507,25 +512,19 @@ text-align: center;
     display: inline;
   }
   .education-left{
-    width:75%;
+    width:100%;
+    text-align: center;
     margin-top: 100px;
+    margin-right: 5%;
   }
   .education-left img{
-    max-width:65% ;
+    max-width:50% ;
     max-height: 50%;
-  margin-left: 50px;
-  }
+ }
   .education-right{
     margin-top: 60px;
    width: 100%;
 margin-left: 0px;
-  }
-}
-@media only screen and (max-width: 750px) {
-  .education-left img{
-    max-width:80% ;
-    max-height: 50%;
-  margin-left: 80px;
   }
 }
 
@@ -753,6 +752,15 @@ font-weight: 500;
  padding: 0;
   }
 }
+@media only screen and (max-width: 383px) {
+  .lang  span{
+    font-size: 30px;
+    font-weight: 700;
+    }
+    .skill-more{
+      font-size: 22px;
+    }
+}
 
 
 
@@ -926,7 +934,11 @@ div.text1 {
  margin-left: 0px;
  }
 }
-
+@media only screen and (max-width: 316px) {
+.contact-left h3{
+  font-size: 17px;
+}
+}
 
 
 
@@ -1000,4 +1012,12 @@ nav p {
 
 footer {
   margin: 0;
+}
+@media only screen and (max-width: 360px) {
+nav p{
+  font-size: 15px;
+}
+nav span{
+  font-size: 15px;
+}
 }
